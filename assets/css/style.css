@@ -913,11 +913,12 @@ button.navbar-toggler:focus {
 
 .navbar-brand {
     margin-right: 110px;
+    font-size: 10px;
 }
 
 .navbar-brand img {
     width: auto;
-    height: 100px;
+    height: 80px;
 }
 
 
