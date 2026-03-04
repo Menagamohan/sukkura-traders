@@ -1441,7 +1441,7 @@ service css
 
 .service-item:hover {
     transform: translateY(-10px) scale(1.02);
-    box-shadow: 0 15px 20px -10px #48b5ff, 0 0 0 3px white inset, 0 0 0 5px #b1e0ff inset;
+    /* box-shadow: 0 15px 20px -10px #48b5ff, 0 0 0 3px white inset, 0 0 0 5px #b1e0ff inset; */
     background: linear-gradient(165deg, #ffffff, #ecf9ff);
 }
 
@@ -1465,14 +1465,14 @@ service css
     border-radius: 50% 30% 50% 30% / 40% 50% 40% 50%;
     /* background: linear-gradient(145deg, #c8e9ff, #9ed5ff); */
     padding: 8px;
-    box-shadow: 0 2px 10px -5px #2f8fc0, 0 0 0 4px white, 0 0 0 6px #b3daf5;
+    /* box-shadow: 0 2px 10px -5px #2f8fc0, 0 0 0 4px white, 0 0 0 6px #b3daf5; */
     border: 2px solid white;
     transition: all 0.3s ease;
 }
 
 .service-item:hover .service-icon img {
     border-radius: 40% 50% 40% 50% / 50% 40% 50% 40%;
-    box-shadow: 0 10px 15px -3px #0077be, 0 0 0 5px white, 0 0 0 8px #cde5ff;
+    /* box-shadow: 0 10px 15px -3px #0077be, 0 0 0 5px white, 0 0 0 8px #cde5ff; */
 }
 
 
