@@ -87,6 +87,41 @@
     <link rel="stylesheet" href="assets/css/magnific-popup.min.css" />
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+
+    <style>
+        .flex-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            padding: 40px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: 0.3s ease;
+            text-align: center;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .card h3 {
+            padding: 15px;
+            margin: 0;
+            font-size: 18px;
+        }
+    </style>
+
 </head>
 
 <body itemscope itemtype="https://schema.org/WebPage">
@@ -422,216 +457,114 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-6 col-lg-3">
-                        <div class="service-item" itemscope itemtype="https://schema.org/Product">
-                            <div class="service-icon">
-                                <img src="assets/img/accessories/barcode labels.avif" alt="Barcode Labels - Sukkra Traders Pondicherry Computer Accessories Dealer" style="width: auto; height: 150px" itemprop="image" />
-                            </div>
-                            <div class="service-content">
-                                <p class="service-text" itemprop="name">BARCODE LABEL</p>
-                            </div>
-                        </div>
+
+
+
+                <div class="flex-container">
+
+                    <div class="card">
+                        <img src="assets/img/accessories/barcode labels.avif" alt="Image 1">
+                        <h3>BARCODE LABEL</h3>
                     </div>
 
-                    <div class="col-md-6 col-lg-3">
-                        <div class="service-item" itemscope itemtype="https://schema.org/Product">
-                            <div class="service-icon">
-                                <img src="assets/img/accessories/barcode ribbon.avif" alt="Barcode Ribbon - Thermal Paper Roll Dealers Pondicherry" style="width: auto; height: 150px" itemprop="image" />
-                            </div>
-                            <div class="service-content">
-                                <p class="service-text" itemprop="name">BARCODE RIBBON</p>
-                            </div>
-                        </div>
+                    <div class="card">
+                        <img src="assets/img/accessories/barcode ribbon.avif" alt="Image 2">
+                        <h3>BARCODE RIBBON</h3>
                     </div>
 
-                    <div class="col-md-6 col-lg-3">
-                        <div class="service-item" itemscope itemtype="https://schema.org/Product">
-                            <div class="service-icon">
-                                <img src="assets/img/accessories/cd.avif" alt="CD - Computer Dealer in Pondicherry" style="width: auto; height: 150px" itemprop="image" />
-                            </div>
-                            <div class="service-content">
-                                <p class="service-text" itemprop="name">CD</p>
-                            </div>
-                        </div>
+                    <div class="card">
+                        <img src="assets/img/accessories/cd.avif" alt="Image 3">
+                        <h3>CD</h3>
                     </div>
 
-                    <div class="col-md-6 col-lg-3">
-                        <div class="service-item" itemscope itemtype="https://schema.org/Product">
-                            <div class="service-icon">
-                                <img src="assets/img/accessories/connecter.avif" alt="Connector - USB Hub and Computer Accessories Pondicherry" style="width: auto; height: 150px" itemprop="image" />
-                            </div>
-                            <div class="service-content">
-                                <p class="service-text" itemprop="name">CONNECTOR</p>
-                            </div>
-                        </div>
+                    <div class="card">
+                        <img src="assets/img/accessories/connecter.avif" alt="Image 4">
+                        <h3>CONNECTOR</h3>
                     </div>
 
-                    <div class="col-md-6 col-lg-3">
-                        <div class="service-item" itemscope itemtype="https://schema.org/Product">
-                            <div class="service-icon">
-                                <img src="assets/img/accessories/dvd.avif" alt="DVD - Sukkra Traders Pondicherry IT Products" style="width: auto; height: 150px" itemprop="image" />
-                            </div>
-                            <div class="service-content">
-                                <p class="service-text" itemprop="name">DVD</p>
-                            </div>
-                        </div>
+                    <div class="card">
+                        <img src="assets/img/accessories/dvd.avif" alt="Image 5">
+                        <h3>DVD</h3>
                     </div>
 
-                    <div class="col-md-6 col-lg-3">
-                        <div class="service-item" itemscope itemtype="https://schema.org/Product">
-                            <div class="service-icon">
-                                <img src="assets/img/accessories/hard disk.avif" alt="Hard Disk - Computer Accessories Pondicherry" style="width: auto; height: 150px" itemprop="image" />
-                            </div>
-                            <div class="service-content">
-                                <p class="service-text" itemprop="name">HARD DISK</p>
-                            </div>
-                        </div>
+                    <div class="card">
+                        <img src="assets/img/accessories/hard disk.avif" alt="Image 6">
+                        <h3>HARD DISK</h3>
                     </div>
 
-                    <div class="col-md-6 col-lg-3">
-                        <div class="service-item" itemscope itemtype="https://schema.org/Product">
-                            <div class="service-icon">
-                                <img src="assets/img/accessories/keyboard.avif" alt="Keyboard - Peripherals Dealer Pondicherry" style="width: auto; height: 150px" itemprop="image" />
-                            </div>
-                            <div class="service-content">
-                                <p class="service-text" itemprop="name">KEY BOARD</p>
-                            </div>
-                        </div>
+                    <div class="card">
+                        <img src="assets/img/accessories/keyboard.avif" alt="Image 7">
+                        <h3>KEY BOARD</h3>
                     </div>
 
-                    <div class="col-md-6 col-lg-3">
-                        <div class="service-item" itemscope itemtype="https://schema.org/Product">
-                            <div class="service-icon">
-                                <img src="assets/img/accessories/monitor.avif" alt="Monitor - Computer Dealer in Poncherry" style="width: auto; height: 150px" itemprop="image" />
-                            </div>
-                            <div class="service-content">
-                                <p class="service-text" itemprop="name">MONITOR</p>
-                            </div>
-                        </div>
+                    <div class="card">
+                        <img src="assets/img/accessories/monitor.avif" alt="Image 8">
+                        <h3>MONITOR</h3>
                     </div>
 
-                    <div class="col-md-6 col-lg-3">
-                        <div class="service-item" itemscope itemtype="https://schema.org/Product">
-                            <div class="service-icon">
-                                <img src="assets/img/accessories/wireless mouse.avif" alt="Wired Mouse - Sukkra Traders Pondicherry Computer Accessories" style="width: auto; height: 150px" itemprop="image" />
-                            </div>
-                            <div class="service-content">
-                                <p class="service-text" itemprop="name">WIRED MOUSE</p>
-                            </div>
-                        </div>
+                    <div class="card">
+                        <img src="assets/img/accessories/wireless mouse.avif" alt="Image 1">
+                        <h3>WIRED MOUSE</h3>
                     </div>
 
-                    <div class="col-md-6 col-lg-3">
-                        <div class="service-item" itemscope itemtype="https://schema.org/Product">
-                            <div class="service-icon">
-                                <img src="assets/img/accessories/network produts cable.avif" alt="Network Cable - Printer and Scanner Shop Pondicherry" style="width: auto; height: 150px" itemprop="image" />
-                            </div>
-                            <div class="service-content">
-                                <p class="service-text" itemprop="name">NETWORK CABLE</p>
-                            </div>
-                        </div>
+                    <div class="card">
+                        <img src="assets/img/accessories/network produts cable.avif" alt="Image 2">
+                        <h3>NETWORK CABLE</h3>
                     </div>
 
-                    <div class="col-md-6 col-lg-3">
-                        <div class="service-item" itemscope itemtype="https://schema.org/Product">
-                            <div class="service-icon">
-                                <img src="assets/img/accessories/pendrive.avif" alt="Pendrive - USB Hub and Computer Accessories Pondicherry" style="width: auto; height: 150px" itemprop="image" />
-                            </div>
-                            <div class="service-content">
-                                <p class="service-text" itemprop="name">PENDRIVE</p>
-                            </div>
-                        </div>
+                    <div class="card">
+                        <img src="assets/img/accessories/pendrive.avif" alt="Image 3">
+                        <h3>PENDRIVE</h3>
                     </div>
 
-                    <div class="col-md-6 col-lg-3">
-                        <div class="service-item" itemscope itemtype="https://schema.org/Product">
-                            <div class="service-icon">
-                                <img src="assets/img/accessories/presenter.avif" alt="Presenter - Sukkra Traders Pondicherry IT Products" style="width: auto; height: 150px" itemprop="image" />
-                            </div>
-                            <div class="service-content">
-                                <p class="service-text" itemprop="name">PRESENTER</p>
-                            </div>
-                        </div>
+                    <div class="card">
+                        <img src="assets/img/accessories/presenter.avif" alt="Image 4">
+                        <h3>PRESENTER</h3>
                     </div>
 
-                    <div class="col-md-6 col-lg-3">
-                        <div class="service-item" itemscope itemtype="https://schema.org/Product">
-                            <div class="service-icon">
-                                <img src="assets/img/accessories/ribbon cartridge.avif" alt="Ribbon Cartridge - POS Printer Repair Pondicherry" style="width: auto; height: 150px" itemprop="image" />
-                            </div>
-                            <div class="service-content">
-                                <p class="service-text" itemprop="name">RIBBON CARTRIDGE</p>
-                            </div>
-                        </div>
+                    <div class="card">
+                        <img src="assets/img/accessories/ribbon cartridge.avif" alt="Image 5">
+                        <h3>RIBBON CARTRIDGE</h3>
                     </div>
 
-                    <div class="col-md-6 col-lg-3">
-                        <div class="service-item" itemscope itemtype="https://schema.org/Product">
-                            <div class="service-icon">
-                                <img src="assets/img/accessories/ribbon refill.avif" alt="Ribbon Refill - Thermal Paper Roll Dealers Pondicherry" style="width: auto; height: 150px" itemprop="image" />
-                            </div>
-                            <div class="service-content">
-                                <p class="service-text" itemprop="name">RIBBON REFILL</p>
-                            </div>
-                        </div>
+                    <div class="card">
+                        <img src="assets/img/accessories/ribbon refill.avif" alt="Image 6">
+                        <h3>RIBBON REFILL</h3>
                     </div>
 
-                    <div class="col-md-6 col-lg-3">
-                        <div class="service-item" itemscope itemtype="https://schema.org/Product">
-                            <div class="service-icon">
-                                <img src="assets/img/accessories/router.avif" alt="Router - Computer Accessories Pondicherry" style="width: auto; height: 150px" itemprop="image" />
-                            </div>
-                            <div class="service-content">
-                                <p class="service-text" itemprop="name">ROUTER</p>
-                            </div>
-                        </div>
+                    <div class="card">
+                        <img src="assets/img/accessories/router.avif" alt="Image 7">
+                        <h3>ROUTER</h3>
                     </div>
 
-                    <div class="col-md-6 col-lg-3">
-                        <div class="service-item" itemscope itemtype="https://schema.org/Product">
-                            <div class="service-icon">
-                                <img src="assets/img/accessories/sd card.avif" alt="SD Card - Peripherals Dealer Pondicherry" style="width: auto; height: 150px" itemprop="image" />
-                            </div>
-                            <div class="service-content">
-                                <p class="service-text" itemprop="name">SD CARD</p>
-                            </div>
-                        </div>
+                    <div class="card">
+                        <img src="assets/img/accessories/sd card.avif" alt="Image 8">
+                        <h3>SD CARD</h3>
                     </div>
 
-                    <div class="col-md-6 col-lg-3">
-                        <div class="service-item" itemscope itemtype="https://schema.org/Product">
-                            <div class="service-icon">
-                                <img src="assets/img/accessories/speaker.avif" alt="Speaker - Computer Accessories Shop Pondicherry" style="width: auto; height: 150px" itemprop="image" />
-                            </div>
-                            <div class="service-content">
-                                <p class="service-text" itemprop="name">SPEAKER</p>
-                            </div>
-                        </div>
+                    <div class="card">
+                        <img src="assets/img/accessories/speaker.avif" alt="Image 1">
+                        <h3>SPEAKER</h3>
                     </div>
 
-                    <div class="col-md-6 col-lg-3">
-                        <div class="service-item" itemscope itemtype="https://schema.org/Product">
-                            <div class="service-icon">
-                                <img src="assets/img/accessories/webcam.avif" alt="Webcam - Sukkra Traders Pondicherry IT Peripherals" style="width: auto; height: 150px" itemprop="image" />
-                            </div>
-                            <div class="service-content">
-                                <p class="service-text" itemprop="name">WEBCAM</p>
-                            </div>
-                        </div>
+                    <div class="card">
+                        <img src="assets/img/accessories/webcam.avif" alt="Image 2">
+                        <h3>WEBCAM</h3>
                     </div>
 
-                    <div class="col-md-6 col-lg-3">
-                        <div class="service-item" itemscope itemtype="https://schema.org/Product">
-                            <div class="service-icon">
-                                <img src="assets/img/accessories/wireless mouse.avif" alt="Wireless Mouse - USB Hub and Computer Accessories Pondicherry" style="width: auto; height: 150px" itemprop="image" />
-                            </div>
-                            <div class="service-content">
-                                <p class="service-text" itemprop="name">WIRELESS MOUSE</p>
-                            </div>
-                        </div>
+                    <div class="card">
+                        <img src="assets/img/accessories/wireless mouse.avif" alt="Image 3">
+                        <h3>WIRELESS MOUSE</h3>
                     </div>
+
+
+
+
                 </div>
+
+
+
+
             </div>
         </div>
         <!-- service area end -->
