@@ -3678,7 +3678,7 @@ DOWNLOAD BUTTON STYLES - Responsive
 /* Desktop Download Button */
 
 .desktop-download-wrapper {
-    margin-left: 585px;
+    margin-left: 385px;
     display: block;
 }
 
@@ -4581,5 +4581,29 @@ RESPONSIVE DESIGN FOR ALL DEVICES
     }
     .navbar .nav-item .nav-link {
         padding: 15px 0;
+    }
+}
+
+
+/* Desktop view only */
+
+@media (min-width:1200px) {
+    .header-top .navbar-brand {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header-top .navbar-brand img {
+        height: 70px;
+        width: auto;
+    }
+    .header-top .navbar-brand span {
+        font-size: 32px;
+        margin-left: 10px;
+    }
+    .header-top-left {
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
 }
