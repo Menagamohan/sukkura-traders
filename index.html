@@ -71,6 +71,40 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <style>
+        .flex-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            padding: 40px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: 0.3s ease;
+            text-align: center;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .card h3 {
+            padding: 15px;
+            margin: 0;
+            font-size: 18px;
+        }
+    </style>
 </head>
 
 <body>
@@ -114,7 +148,7 @@
                     </div>
                 </div>
                 <div class="header-top-right">
-                    <div class="header-top-social" style="margin-right: 10px;">
+                    <div class="header-top-social">
                         <a href="tel:+919345427972"><i class="fas fa-phone"></i></a>
                         <a href="https://www.facebook.com/people/Sukkra-Traders/100094348991847/" aria-label="Facebook page"><i class="fab fa-facebook-f"></i
                 ></a>
@@ -220,11 +254,14 @@
                       <a class="dropdown-item" href="laser.html">LASERJET DUPLEX</a>
                             </li>
                         </ul>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="scanner.html"> HP SCANNER</a>
                         </li>
 
                         <!-- CARTRIDGES dropdown -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">CARTRIDGES</a
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> HP CARTRIDGES</a
                   >
                   <ul class="dropdown-menu fade-up">
                     <li>
@@ -382,9 +419,7 @@
                   </ul>
                 </li>
 
-                <li class="nav-item">
-                  <a class="nav-link" href="scanner.html">SCANNER</a>
-                        </li>
+                
                         <li class="nav-item">
                             <a class="nav-link" href="accessories.html">ACCESSORIES</a>
                         </li>
@@ -899,174 +934,92 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-6 col-lg-3">
-                                <div class="service-item">
-                                    <div class="service-icon">
-                                        <img src="assets/img/home/d1.jfif" alt="HP Smart Tank 525 Printer Pondicherry" />
-                                    </div>
-                                    <div class="service-content">
-                                        <h4 class="service-title">
-                                            <a href="#">HP SMART TANK 525</a>
-                                        </h4>
-                                        <p class="service-text">
-                                            HP Smart Tank 525 AiO Blue Non Wi-Fi
-                                        </p>
-                                    </div>
-                                </div>
+
+
+
+
+
+                        <div class="flex-container">
+
+                            <div class="card">
+                                <img src="assets/img/home/d1.jfif" alt="Image 1">
+                                <h3>HP SMART TANK 525</h3>
+                                <h5>HP Smart Tank 525 AiO Blue Non Wi-Fi</h5>
                             </div>
-                            <div class="col-md-6 col-lg-3">
-                                <div class="service-item service-item-2">
-                                    <div class="service-icon">
-                                        <img src="assets/img/home/d2.jpg" alt="HP Smart Tank 585 Printer Pondicherry" />
-                                    </div>
-                                    <div class="service-content">
-                                        <h4 class="service-title">
-                                            <a href="#">HP SMART TANK 585</a>
-                                        </h4>
-                                        <p class="service-text">
-                                            HP Smart Tank 585 Dark Blue AiO Wi-Fi
-                                        </p>
-                                    </div>
-                                </div>
+
+                            <div class="card">
+                                <img src="assets/img/home/d2.jpg" alt="Image 2">
+                                <h3>HP SMART TANK 585</h3>
+                                <h5>HP Smart Tank 585 Dark Blue AiO Wi-Fi</h5>
                             </div>
-                            <div class="col-md-6 col-lg-3">
-                                <div class="service-item service-item-3">
-                                    <div class="service-icon">
-                                        <img src="assets/img/home/d6.jpg" alt="HP Smart Tank 524 Printer Pondicherry" />
-                                    </div>
-                                    <div class="service-content">
-                                        <h4 class="service-title">
-                                            <a href="#">HP SMART TANK 524</a>
-                                        </h4>
-                                        <p class="service-text">
-                                            HP Smart Tank 524 AiO (2 Yr warranty) NEW -
-                                        </p>
-                                    </div>
-                                </div>
+
+                            <div class="card">
+                                <img src="assets/img/home/d6.jpg" alt="Image 3">
+                                <h3>HP SMART TANK 524</h3>
+                                <h5>HP Smart Tank 524 AiO (2 Yr warranty) NEW -</h5>
                             </div>
-                            <div class="col-md-6 col-lg-3">
-                                <div class="service-item service-item-4">
-                                    <div class="service-icon">
-                                        <img src="assets/img/home/d5.png" alt="HP Smart Tank 584 Printer Pondicherry" />
-                                    </div>
-                                    <div class="service-content">
-                                        <h4 class="service-title">
-                                            <a href="#">HP SMART TANK 584</a>
-                                        </h4>
-                                        <p class="service-text">
-                                            HP Smart Tank 584 AiO Wi-Fi (2 Yr warranty) NEW
-                                        </p>
-                                    </div>
-                                </div>
+
+                            <div class="card">
+                                <img src="assets/img/home/d5.png" alt="Image 4">
+                                <h3>HP SMART TANK 584</h3>
+                                <h5>HP Smart Tank 584 AiO Wi-Fi (2 Yr warranty) NEW</h5>
                             </div>
-                            <div class="col-md-6 col-lg-3">
-                                <div class="service-item service-item-5">
-                                    <div class="service-icon">
-                                        <img src="assets/img/home/d7.jpg" alt="HP Smart Tank 675 Printer Pondicherry" />
-                                    </div>
-                                    <div class="service-content">
-                                        <h4 class="service-title">
-                                            <a href="#">HP SMART TANK 675</a>
-                                        </h4>
-                                        <p class="service-text">HP Smart Tank 675 AIO Duplex</p>
-                                    </div>
-                                </div>
+
+                            <div class="card">
+                                <img src="assets/img/home/d7.jpg" alt="Image 5">
+                                <h3>HP SMART TANK 675 </h3>
+                                <h5>HP Smart Tank 675 AIO Duplex</h5>
                             </div>
-                            <div class="col-md-6 col-lg-3">
-                                <div class="service-item service-item-6">
-                                    <div class="service-icon">
-                                        <img src="assets/img/home/d8.avif" alt="HP Smart Tank 750 Printer Pondicherry" />
-                                    </div>
-                                    <div class="service-content">
-                                        <h4 class="service-title">
-                                            <a href="#">HP SMART TANK 750</a>
-                                        </h4>
-                                        <p class="service-text">HP Smart Tank 750 AiO Duplex ADF</p>
-                                    </div>
-                                </div>
+
+                            <div class="card">
+                                <img src="assets/img/home/d8.avif" alt="Image 6">
+                                <h3>HP SMART TANK 750</h3>
+                                <h5>HP Smart Tank 750 AiO Duplex ADF</h5>
                             </div>
-                            <div class="col-md-6 col-lg-3">
-                                <div class="service-item service-item-7">
-                                    <div class="service-icon">
-                                        <img src="assets/img/home/d9.png" alt="HP Smart Tank 790 Printer Pondicherry" />
-                                    </div>
-                                    <div class="service-content">
-                                        <h4 class="service-title">
-                                            <a href="#">HP SMART TANK 790</a>
-                                        </h4>
-                                        <p class="service-text">HP Smart Tank 790 AiO Duplex ADF</p>
-                                    </div>
-                                </div>
+
+                            <div class="card">
+                                <img src="assets/img/home/d9.png" alt="Image 7">
+                                <h3>HP SMART TANK 790</h3>
+                                <h5>HP Smart Tank 790 AiO Duplex ADF</h5>
                             </div>
-                            <div class="col-md-6 col-lg-3">
-                                <div class="service-item service-item-8">
-                                    <div class="service-icon">
-                                        <img src="assets/img/home/d10.png" alt="HP DeskJet Printer Pondicherry" />
-                                    </div>
-                                    <div class="service-content">
-                                        <h4 class="service-title">
-                                            <a href="#">HP DESKJET INK ADV</a>
-                                        </h4>
-                                        <p class="service-text">
-                                            HP DeskJet Ink Adv Ultra 4929 AiO New
-                                        </p>
-                                    </div>
-                                </div>
+
+                            <div class="card">
+                                <img src="assets/img/home/d10.png" alt="Image 8">
+                                <h3>HP DESKJET INK ADV</h3>
+                                <h5>HP DeskJet Ink Adv Ultra 4929 AiO New</h5>
                             </div>
-                            <div class="col-md-6 col-lg-3">
-                                <div class="service-item">
-                                    <div class="service-icon">
-                                        <img src="assets/img/home/d11.avif" alt="HP OfficeJet Pro 8120 Pondicherry" />
-                                    </div>
-                                    <div class="service-content">
-                                        <h4 class="service-title">
-                                            <a href="#">HP OFFICEJET PRO 8120</a>
-                                        </h4>
-                                        <p class="service-text">HP OfficeJet Pro 8120 New</p>
-                                    </div>
-                                </div>
+
+                            <div class="card">
+                                <img src="assets/img/home/d11.avif" alt="Image 1">
+                                <h3>HP OFFICEJET PRO 8120</h3>
+                                <h5>HP OfficeJet Pro 8120 New</h5>
                             </div>
-                            <div class="col-md-6 col-lg-3">
-                                <div class="service-item service-item-2">
-                                    <div class="service-icon">
-                                        <img src="assets/img/home/d12.avif" alt="HP OfficeJet Pro 9130 Pondicherry" />
-                                    </div>
-                                    <div class="service-content">
-                                        <h4 class="service-title">
-                                            <a href="#">HP OFFICEJET PRO 9130</a>
-                                        </h4>
-                                        <p class="service-text">HP OfficeJet Pro 9130 New</p>
-                                    </div>
-                                </div>
+
+                            <div class="card">
+                                <img src="assets/img/home/d12.avif" alt="Image 2">
+                                <h3>HP OFFICEJET PRO 9130</h3>
+                                <h5>HP OfficeJet Pro 9130 New</h5>
                             </div>
-                            <div class="col-md-6 col-lg-3">
-                                <div class="service-item service-item-3">
-                                    <div class="service-icon">
-                                        <img src="assets/img/home/d13.png" alt="HP OfficeJet Pro 9720 A3 Printer Pondicherry" />
-                                    </div>
-                                    <div class="service-content">
-                                        <h4 class="service-title">
-                                            <a href="#">HP OFFICEJET PRO 9720</a>
-                                        </h4>
-                                        <p class="service-text">HP OfficeJet Pro 9720 (A3) New</p>
-                                    </div>
-                                </div>
+
+                            <div class="card">
+                                <img src="assets/img/home/d13.png" alt="Image 3">
+                                <h3>HP OFFICEJET PRO 9720</h3>
+                                <h5>HP OfficeJet Pro 9720 (A3) New</h5>
                             </div>
-                            <div class="col-md-6 col-lg-3">
-                                <div class="service-item service-item-4">
-                                    <div class="service-icon">
-                                        <img src="assets/img/home/d14.avif" alt="HP OfficeJet Pro 9730 A3 Printer Pondicherry" />
-                                    </div>
-                                    <div class="service-content">
-                                        <h4 class="service-title">
-                                            <a href="#">HP OFFICEJET PRO 9730</a>
-                                        </h4>
-                                        <p class="service-text">HP OfficeJet Pro 9730 (A3) New</p>
-                                    </div>
-                                </div>
+
+                            <div class="card">
+                                <img src="assets/img/home/d14.avif" alt="Image 4">
+                                <h3>HP OFFICEJET PRO 9730</h3>
+                                <h5>HP OfficeJet Pro 9730 (A3) New</h5>
                             </div>
+
+
+
                         </div>
+
+
+
+
                     </div>
                 </div>
                 <!-- service area end -->
