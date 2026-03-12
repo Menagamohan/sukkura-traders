@@ -39,7 +39,24 @@ top header css
 .header-top-right {
     display: flex;
     align-items: center;
-    gap: 25px;
+}
+
+.header-top-social {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: nowrap;
+}
+
+.header-top-social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background: #e5e5e5;
+    border-radius: 50%;
+    text-decoration: none;
 }
 
 .header-top-social span {
@@ -92,11 +109,6 @@ top header css
     color: #2b6eff;
 }
 
-@media all and (max-width: 991px) {
-    .header-top {
-        display: none;
-    }
-}
 
 /* ===================
 nav menu css
@@ -278,75 +290,9 @@ nav menu css
     line-height: 44px;
 }
 
-/* ✅ FIX: toggler only visible on mobile (Bootstrap default) */
-.navbar-toggler {
-    display: none;
-}
-
-@media (max-width: 991px) {
-    .navbar-toggler {
-        display: block;
-    }
-
-    .navbar-nav .nav-link {
-        padding-left: 1.2rem !important;
-    }
-
-    .dropdown-menu {
-        box-shadow: none;
-        border-left: 2px solid #b38b5f;
-        border-radius: 12px;
-        margin-left: 15px;
-    }
-
-    /* Ensure menu takes full width on mobile */
-    .navbar-collapse {
-        background: white;
-        padding: 1rem;
-        border-radius: 8px;
-        margin-top: 10px;
-        max-height: 80vh;
-        overflow-y: auto;
-    }
-
-    /* Adjust brand size on small devices */
-    .navbar-brand span {
-        font-size: 1.5rem !important;
-    }
-
-    .navbar-brand img.ooo {
-        height: 60px;
-    }
-}
-
-/* Extra small devices (phones, under 576px) */
-@media (max-width: 575px) {
-    .navbar-brand span {
-        font-size: 1.2rem !important;
-    }
-
-    .navbar-brand img.ooo {
-        height: 50px;
-    }
-
-    .header-nav-search .header-nav-link {
-        width: 36px;
-        height: 36px;
-        font-size: 1.1rem;
-    }
-
-    .navbar-toggler {
-        width: 36px;
-        height: 36px;
-        font-size: 1.1rem;
-    }
-
-    .mobile-menu-right {
-        gap: 5px;
-    }
-}
 
 /* add subtle shine to the navbar */
+
 .main-navigation::after {
     content: '';
     position: absolute;
@@ -359,16 +305,11 @@ nav menu css
     pointer-events: none;
 }
 
-@media (min-width: 992px) {
-    .dropdown:hover .dropdown-menu {
-        display: block;
-        margin-top: 0;
-    }
-}
 
 /* ======================
 search popup (unchanged)
 ====================== */
+
 .search-popup {
     position: fixed;
     left: 0;
@@ -484,30 +425,476 @@ search popup (unchanged)
     color: #51668a;
 }
 
-
-     .mobile-menu-header {
-  display: flex;
-  justify-content: flex-end;
-  padding: 10px 15px;
-  border-bottom: 1px solid #eee; /* optional */
+.mobile-menu-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
 }
 
 .menu-close-btn {
-  background: none;
-  border: none;
-  font-size: 24px;
-  color: #800000;
-  cursor: pointer;
-  padding: 0;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  transition: background 0.2s;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #800000;
+    cursor: pointer;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background 0.2s;
 }
 
 .menu-close-btn:hover {
-  background: rgba(0,0,0,0.05);
+    background: rgba(0, 0, 0, 0.05);
+}
+
+
+/* ====================================================================
+   COMPREHENSIVE MEDIA QUERIES - All Devices (without changing original code)
+   ==================================================================== */
+
+
+/* Extra Large Devices (Desktops, 1400px and up) */
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+    .navbar-nav .nav-link {
+        font-size: 15px;
+        padding: 0.8rem 1.2rem !important;
+    }
+    .header-top-contact ul {
+        gap: 35px;
+    }
+    .header-top-right {
+        gap: 35px;
+    }
+    .navbar-brand img.ooo {
+        height: 90px;
+    }
+}
+
+
+/* Large Devices (Desktops, 1200px to 1399px) */
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .container {
+        max-width: 1140px;
+    }
+    .navbar-nav .nav-link {
+        font-size: 14px;
+        padding: 0.7rem 1rem !important;
+    }
+    .header-top-contact ul {
+        gap: 30px;
+    }
+    .header-top-right {
+        gap: 30px;
+    }
+    .dropdown-menu {
+        min-width: 220px;
+    }
+}
+
+
+/* Medium Large Devices (Laptops, 992px to 1199px) */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+    .navbar-nav .nav-link {
+        font-size: 14px;
+        padding: 0.6rem 0.8rem !important;
+    }
+    .navbar-brand img.ooo {
+        height: 70px;
+    }
+    .header-top-contact ul {
+        gap: 20px;
+    }
+    .header-top-contact ul li a i {
+        margin-right: 6px;
+    }
+    .header-top-right {
+        gap: 20px;
+    }
+    .header-top-social a {
+        width: 34px;
+        height: 34px;
+        line-height: 34px;
+        font-size: 14px;
+    }
+    .dropdown-menu {
+        min-width: 200px;
+    }
+    .dropdown-item {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+    /* Keep desktop dropdown behavior */
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+    }
+}
+
+
+/* Tablet Devices (768px to 991px) */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+    /* Header top hidden as per original */
+    .header-top {
+        display: none;
+    }
+    /* Navbar adjustments */
+    .navbar-brand img.ooo {
+        height: 60px;
+    }
+    .navbar-brand i span {
+        font-size: 1.6rem;
+    }
+    .navbar-toggler {
+        display: block;
+        width: 42px;
+        height: 42px;
+        font-size: 1.2rem;
+    }
+    .mobile-menu-right {
+        gap: 6px;
+    }
+    .mobile-menu-list .mobile-menu-link {
+        width: 42px;
+        height: 42px;
+        font-size: 1.2rem;
+    }
+    .header-nav-search .header-nav-link {
+        width: 42px;
+        height: 42px;
+        font-size: 1.2rem;
+    }
+    .navbar-nav .nav-link {
+        padding-left: 1.2rem !important;
+        font-size: 15px;
+    }
+    .navbar-collapse {
+        background: white;
+        padding: 1rem;
+        border-radius: 8px;
+        margin-top: 10px;
+        max-height: 80vh;
+        overflow-y: auto;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+    .dropdown-menu {
+        box-shadow: none;
+        border-left: 2px solid #b38b5f;
+        border-radius: 12px;
+        margin-left: 15px;
+        padding: 0.4rem 0;
+        min-width: 200px;
+    }
+    .dropdown-item {
+        padding: 0.5rem 1.2rem;
+        font-size: 0.9rem;
+    }
+    /* Search popup adjustments */
+    .search-popup form {
+        max-width: 600px;
+    }
+    .search-popup .close-search {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
+}
+
+
+/* Small Tablet Devices (576px to 767px) */
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+    /* Header top hidden as per original */
+    .header-top {
+        display: none;
+    }
+    /* Navbar adjustments */
+    .navbar-brand {
+        gap: 5px;
+    }
+    .navbar-brand img.ooo {
+        height: 50px;
+    }
+    .navbar-brand i span {
+        font-size: 1.4rem;
+    }
+    .navbar-toggler {
+        display: block;
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
+    }
+    .mobile-menu-right {
+        gap: 5px;
+    }
+    .mobile-menu-list .mobile-menu-link {
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
+    }
+    .header-nav-search .header-nav-link {
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
+    }
+    .navbar-nav .nav-link {
+        padding-left: 1.2rem !important;
+        font-size: 14px;
+    }
+    .navbar-collapse {
+        background: white;
+        padding: 0.8rem;
+        border-radius: 8px;
+        margin-top: 8px;
+        max-height: 75vh;
+        overflow-y: auto;
+    }
+    .dropdown-menu {
+        box-shadow: none;
+        border-left: 2px solid #b38b5f;
+        border-radius: 10px;
+        margin-left: 10px;
+        padding: 0.3rem 0;
+        min-width: 180px;
+    }
+    .dropdown-item {
+        padding: 0.4rem 1rem;
+        font-size: 0.85rem;
+    }
+    /* Search popup adjustments */
+    .search-popup form {
+        max-width: 500px;
+    }
+    .search-popup .form-group input[type="text"],
+    .search-popup .form-group input[type="search"] {
+        height: 55px;
+        padding: 0 90px 0 25px;
+        font-size: 14px;
+    }
+    .search-popup .form-group input[type="submit"],
+    .search-popup .form-group button {
+        height: 45px;
+        width: 45px;
+        font-size: 18px;
+    }
+    .search-popup .close-search {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
+
+
+/* Mobile Devices (up to 575px) */
+
+@media (max-width: 575px) {
+    .container {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    /* Header top hidden as per original */
+    .header-top {
+        display: none;
+    }
+    /* Navbar adjustments */
+    .navbar-brand {
+        gap: 3px;
+    }
+    .navbar-brand img.ooo {
+        height: 42px;
+    }
+    .navbar-brand i span {
+        font-size: 1.2rem !important;
+    }
+    .navbar-toggler {
+        display: block;
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
+    }
+    .mobile-menu-right {
+        gap: 4px;
+    }
+    .mobile-menu-list .mobile-menu-link {
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
+    }
+    .header-nav-search .header-nav-link {
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
+    }
+    .navbar-nav .nav-link {
+        padding-left: 1rem !important;
+        font-size: 14px;
+        padding: 0.5rem 0.8rem !important;
+    }
+    .navbar-collapse {
+        background: white;
+        padding: 0.8rem;
+        border-radius: 6px;
+        margin-top: 8px;
+        max-height: 70vh;
+        overflow-y: auto;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+    .dropdown-menu {
+        box-shadow: none;
+        border-left: 2px solid #b38b5f;
+        border-radius: 8px;
+        margin-left: 8px;
+        padding: 0.2rem 0;
+        min-width: 160px;
+    }
+    .dropdown-item {
+        padding: 0.3rem 0.8rem;
+        font-size: 0.8rem;
+        margin: 1px 3px;
+    }
+    .dropdown-toggle::after {
+        margin-left: 0.4em;
+        border-width: 0.3em 0.3em 0;
+    }
+    /* Search popup adjustments */
+    .search-popup form {
+        max-width: 95%;
+        left: 2.5%;
+        right: 2.5%;
+    }
+    .search-popup .form-group input[type="text"],
+    .search-popup .form-group input[type="search"] {
+        height: 50px;
+        padding: 0 80px 0 20px;
+        font-size: 14px;
+    }
+    .search-popup .form-group input[type="submit"],
+    .search-popup .form-group button {
+        height: 40px;
+        width: 40px;
+        font-size: 16px;
+        right: 5px;
+        top: 5px;
+    }
+    .search-popup .close-search {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+        line-height: 35px;
+    }
+    /* Mobile menu header */
+    .mobile-menu-header {
+        padding: 8px 12px;
+    }
+    .menu-close-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+    }
+}
+
+
+/* Very Small Mobile Devices (up to 360px) */
+
+@media (max-width: 360px) {
+    .navbar-brand img.ooo {
+        height: 36px;
+    }
+    .navbar-brand i span {
+        font-size: 1rem !important;
+    }
+    .navbar-toggler {
+        width: 32px;
+        height: 32px;
+        font-size: 0.9rem;
+    }
+    .mobile-menu-list .mobile-menu-link {
+        width: 32px;
+        height: 32px;
+        font-size: 0.9rem;
+    }
+    .header-nav-search .header-nav-link {
+        width: 32px;
+        height: 32px;
+        font-size: 0.9rem;
+    }
+    .mobile-menu-right {
+        gap: 3px;
+    }
+    .navbar-nav .nav-link {
+        font-size: 13px;
+        padding: 0.4rem 0.6rem !important;
+    }
+    .dropdown-menu {
+        min-width: 140px;
+    }
+    .dropdown-item {
+        padding: 0.25rem 0.7rem;
+        font-size: 0.75rem;
+    }
+}
+
+
+/* Print Styles - for printing */
+
+@media print {
+    .header-top,
+    .main-navigation,
+    .search-popup,
+    .mobile-menu-right {
+        display: none !important;
+    }
+}
+
+
+/* High-resolution screens (Retina) */
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    .navbar-brand img.ooo {
+        filter: drop-shadow(0 2px 4px rgba(100, 60, 20, 0.1));
+    }
+}
+
+
+/* Landscape mode for mobile devices */
+
+@media (max-width: 991px) and (orientation: landscape) {
+    .navbar-collapse {
+        max-height: 60vh;
+    }
+    .navbar-nav .nav-link {
+        padding: 0.4rem 1rem !important;
+    }
+    .search-popup form {
+        top: 45%;
+    }
+}
+
+
+/* Dark mode support (optional) */
+
+@media (prefers-color-scheme: dark) {
+    /* Add dark mode styles if needed */
 }

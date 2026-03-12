@@ -882,7 +882,7 @@ hero css
 
 /* === Tablet View (between 768px and 1024px) === */
 
-@media screen and (min-width: 768px) and (max-width: 1524px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     /* header top adjustments */
     .header-top-wrapper {
         flex-wrap: wrap;
@@ -1008,13 +1008,13 @@ hero css
     }
     /* social icons in top right */
     .header-top-social {
-        gap: 6px;
+        gap: 4px;
     }
     .header-top-social a {
         width: 34px;
         height: 34px;
-        line-height: 34px;
-        font-size: 14px;
+        line-height: 14px;
+        font-size: 12px;
     }
     /* image modal simulation — creates a modal-like container for any image inside header */
     /* (If you intended to put an actual image modal trigger, you'll need JS. 
