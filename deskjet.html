@@ -384,16 +384,13 @@
 
     <!-- header area -->
     <header class="home-2 header">
-        <!-- top header -->
-        <!-- ===== ATTRACTIVE TOP BAR – EXACT SAME HTML + ENHANCED STYLE + CLICK-TO-CALL VISUAL ===== -->
+
         <div class="header-top">
             <div class="container">
                 <div class="header-top-wrapper">
-                    <!-- left side (email and phone) – unchanged HTML, but phone already has tel: link (direct call) -->
                     <div class="header-top-left">
                         <div class="header-top-contact">
                             <ul>
-                                <!-- email (exact, with cloudflare email protection) -->
                                 <li>
                                     <a href="https://live.themewild.com/cdn-cgi/l/email-protection#7910171f16391c01181409151c571a1614"><i class="far fa-envelope-open"></i
                       ><span
@@ -403,65 +400,97 @@
                       ></a
                     >
                   </li>
-                  <!-- phone – already has href="tel:+919345427972" => click to call works natively on mobile/desktop. we just style it attractively -->
                   <li>
                     <a href="tel:+919345427972"
-                      ><i class="fas fa-headset"></i> +91 93454 27972</a
+                      ><i class="fas fa-headset"></i> +91 93454 27972 / 75388 27972</a
                     >
                   </li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- right side (lang + social) – exactly as provided -->
-            <div class="header-top-right">
-              <div class="header-top-social">
-                <a href="tel:+919345427972"><i class="fas fa-phone"></i></a>
-                                    <a href="https://www.facebook.com/people/Sukkra-Traders/100094348991847/" aria-label="Facebook page"><i class="fab fa-facebook-f"></i
-                ></a>
-                                    <a href="https://www.instagram.com/sukkra_traders/" aria-label="Instagram page"><i class="fab fa-instagram"></i
-                ></a>
-
-                                    <a href="https://www.instagram.com/sukkra_traders/?next=%2Fpy_sai_events%2F" aria-label="Instagram page"><i class="fab fa-youtube"></i
-                ></a>
+                     <!-- DESKTOP DOWNLOAD BUTTON - Shown only on desktop -->
+          <div class="desktop-download-wrapper">
+            <a href="assets/img/home/Range Brochure_1 for print_latestt (1).pdf" class="theme-btn desktop-download-btn">
+              <i class="fas fa-download"></i> Download
+            </a>
                         </div>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="header-top-right">
+                    <div class="header-top-social">
+                        <a href="tel:+919345427972"><i class="fas fa-phone"></i></a>
+                        <a href="https://www.facebook.com/people/Sukkra-Traders/100094348991847/" aria-label="Facebook page"><i class="fab fa-facebook-f"></i
+                ></a>
+                        <a href="https://www.instagram.com/sukkra_traders/" aria-label="Instagram page"><i class="fab fa-instagram"></i
+                ></a>
+                        <a href="https://www.instagram.com/sukkra_traders/?next=%2Fpy_sai_events%2F" aria-label="Instagram page"><i class="fab fa-youtube"></i
+                ></a>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- end header-top -->
-        <!-- ===== ATTRACTIVE NAVBAR – EXACT SAME LINKS & STRUCTURE, UPGRADED VISUALS ===== -->
+        </div>
+        <!-- TOP HEADER (unchanged) -->
+        <div class="header-top" style="background-color: #ffffff;">
+            <div class="container">
+                <div class="header-top-wrapper">
+                    <div class="header-top-left">
+                        <div class="header-top-contact">
+                            <ul>
+
+                                <li>
+                                    <a class="navbar-brand" href="index.html">
+                                        <img src="assets/img/home/logo.avif" alt="Sukkra Traders" class="ooo" style="margin-left: 110px;" />
+                                        <i><span style="color: #800000; font-size: 30px; ">Sukkra Traders</span></i>
+                                    </a>
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- MAIN NAVIGATION with mobile menu bar -->
         <div class="main-navigation">
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
-                    <!-- brand with logo & original text (exact same) -->
-                    <a class="navbar-brand" href="index-2.html">
-                        <img src="assets/img/home/logo.avif" alt="Sukkra Traders Pondicherry - Computer Hardware Dealer Logo" class="ooo" />
-                        <i><span style="color: #800000; font-size: 30px"
-                  >Sukkra Traders</span
-                ></i
-              >
-            </a>
+                    <!-- Brand / Logo -->
 
-            <!-- main collapsible menu (all original items, dropdowns, links – exactly) -->
-            <div class="collapse navbar-collapse" id="main_nav">
-              <ul class="navbar-nav">
-                <!-- Home (exact) -->
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">HOME</a>
-                </li>
-                <!-- About (exact) -->
-                <li class="nav-item">
-                  <a class="nav-link" href="aboutus.html">ABOUT</a>
-                </li>
 
-                <!-- Printer dropdown (full list preserved) -->
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    data-bs-toggle="dropdown"
-                    >HP PRINTER</a
+                    <!-- MOBILE MENU RIGHT: Search + Hamburger (NEW) -->
+                    <div class="mobile-menu-right">
+                        <!-- Search icon (uncommented from your original) -->
+                        <!-- <div class="header-nav-search">
+                        <a href="#" class="header-nav-link search-box-outer" aria-label="Search"><i class="far fa-search"></i></a>
+                </div> -->
+                        <!-- Hamburger toggler -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-controls="main_nav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+              </button>
+                    </div>
+
+                    <!-- Collapsible menu (all your original links) -->
+                    <div class="collapse navbar-collapse" id="main_nav">
+                        <div class="mobile-menu-header d-lg-none">
+                            <button type="button" class="menu-close-btn" id="menuCloseBtn">
+                  <i class="fas fa-times"></i>
+                </button>
+                        </div>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="aboutus.html">ABOUT</a>
+                            </li>
+
+                            <!-- HP PRINTER dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">HP PRINTER</a
                   >
                   <ul class="dropdown-menu fade-up">
                     <li>
@@ -474,7 +503,6 @@
                         >HP DESKJET</a
                       >
                     </li>
-                    <!-- closing li fixed (original had missing </a> but we keep link) -->
                     <li>
                       <a class="dropdown-item" href="officejet.html"
                         >HP OFFICEJET</a
@@ -482,39 +510,39 @@
                     </li>
                     <li>
                       <a class="dropdown-item" href="laserjet pro.html"
-                        >HP LASERJET PRO</a
+                        > LASERJET SINGLE FUNCTION</a
                       >
                     </li>
                     <li>
                       <a class="dropdown-item" href="laserjet.html"
-                        >HP LASERJET</a
+                        >LASERJET MFP</a
                       >
                     </li>
                     <li>
-                      <a class="dropdown-item" href="laser.html">HP LASER</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    data-bs-toggle="dropdown"
-                    >CARTRIDGES</a
+                      <a class="dropdown-item" href="laser.html">LASERJET DUPLEX</a>
+                            </li>
+                        </ul>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="scanner.html"> HP SCANNER</a>
+                        </li>
+
+                        <!-- CARTRIDGES dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> HP CARTRIDGES</a
                   >
                   <ul class="dropdown-menu fade-up">
                     <li>
                       <a class="dropdown-item" href="ink.html">INK CARTRIDGE</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="toner.html"
-                        >TONER CARTRIDGE</a
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="toner.html">TONER CARTRIDGE</a
                       >
                     </li>
                   </ul>
                 </li>
 
-                <!-- TVS Electronics dropdown (full) -->
+                <!-- TVS ELECTRONICS dropdown -->
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link dropdown-toggle"
@@ -565,7 +593,7 @@
                     </li>
                     <li>
                       <a class="dropdown-item" href="24pin80.html"
-                        >24 PIN 80 - COLUMN PRINTERS</a
+                        >24 PIN 80-COLUMN PRINTERS</a
                       >
                     </li>
                     <li>
@@ -596,7 +624,23 @@
                   </ul>
                 </li>
 
-                <!-- Amkette dropdown (full) -->
+                <!-- AMKETTE dropdown -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                    > COMPUTER CONSUMABLES</a
+                  >
+                  <ul class="dropdown-menu fade-up">
+                    <li>
+                      <a class="dropdown-item" href="epson.html"
+                        >EPSON Make</a
+                      >
+                    </li>
+                    
+                  </ul>
+                </li>
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link dropdown-toggle"
@@ -606,67 +650,57 @@
                   >
                   <ul class="dropdown-menu fade-up">
                     <li>
-                      <a class="dropdown-item" href="amketteaudio.html"
-                        >AMKETTE AUDIO</a
+                      <a class="dropdown-item" href="evofox gaming.html"
+                        >EVOFOX GAMING</a
                       >
                     </li>
                     <li>
-                      <a class="dropdown-item" href="audiocables.html"
-                        >AUDIO CABLES & EARPHONES</a
+                      <a class="dropdown-item" href="hubs &  docs.html"
+                        >AMKETTE HUBS & DOCS</a
                       >
                     </li>
                     <li>
-                      <a class="dropdown-item" href="evofox.html"
-                        >EVOFOX GAMEBOX</a
+                      <a class="dropdown-item" href="amkette keyboards.html"
+                        >AMKETTE KEYBOARDS</a
                       >
                     </li>
                     <li>
-                      <a class="dropdown-item" href="amketteaccessories.html"
-                        >AMKETTE ACCESSORIES</a
+                      <a class="dropdown-item" href="amkette mice.html"
+                        >AMKETTE MICE</a
                       >
                     </li>
                     <li>
-                      <a class="dropdown-item" href="smartphone.html"
-                        >SMARTPHONE MOUNTS</a
+                      <a class="dropdown-item" href="connect charge.html"
+                        >CONNECT & CHARGE WITH CONFIDENCE</a
                       >
                     </li>
                     <li>
-                      <a class="dropdown-item" href="peripherals.html"
-                        >IT PERIPHERALS</a
+                      <a class="dropdown-item" href="smartify.html"
+                        >SMARTIFY YOUR CAR</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="streaming.html"
+                        >STREAMING & AUDIO</a
                       >
                     </li>
                   </ul>
                 </li>
 
-                <!-- Scanner (exact) -->
-                <li class="nav-item">
-                  <a class="nav-link" href="scanner.html">SCANNER</a>
-                </li>
-
-                <!-- Cartridges dropdown -->
-
-                <!-- Accessories, Software, Contact (exact) -->
-                <li class="nav-item">
-                  <a class="nav-link" href="accessories.html">ACCESSORIES</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="software.html">SOFTWARE</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">CONTACT</a>
-                </li>
-              </ul>
-
-              <!-- right side search (exact copy with get‑quote commented) -->
-              <!-- <div class="header-nav-right">
-                            <div class="header-nav-search">
-                                <a href="#" class="header-nav-link search-box-outer" aria-label="Search"><i class="far fa-search"></i></a>
-                </div> -->
-                <!-- <div class="header-btn"> <a href="#" class="theme-btn" style="background-color: rgb(98, 159, 249);">Get Quote </a> </div> -->
-                <!-- </div> -->
-        </div>
-        </div>
-        </nav>
+                
+                        <li class="nav-item">
+                            <a class="nav-link" href="accessories.html">ACCESSORIES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="software.html">SOFTWARE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">CONTACT</a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
     </header>
     <!-- header area end -->
